@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="scroll">
+  <header class="encabezado">
+    <nav class="navegacion">
+      <a class="navegacion__enlace" href="#presentacion">
+        <h2 class="navegacion__titulo">Informatorio</h2>
+      </a>
+      <ul class="enlaces">
+        <li class="enlaces__item">
+          <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+        </li>
+        <li class="enlaces__item">
+          <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+        </li>
+        <li class="enlaces__item">
+          <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="principal">
+    <section class="presentacion" id="presentacion">
+      <div class="presentacion__contenedor_info">
+        <h1 class="presentacion__titulo">Soy Sofia Prodanov</h1>
+        <p class="presentacion__parrafo">
+          Bienvenido a mi portfolio.
+        </p>
+        <div class="presentacion__contenedor_botones">
+          <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
+          <a href="./assets/docs/cv.pdf" target="_blank" class="boton boton_oscuro" role="button">Descargar CV</a>
+        </div>
+      </div>
+    </section>
+    <article class="articulo sobre_mi" id="sobre-mi">
+      <h2 class="articulo__titulo">Un poco sobre mi</h2>
+      <div class="articulo__contenedor_descripciones">
+        <section class="seccion_descripcion">
+          <div class="seccion_descripcion__porta_retrato">
+            <img class="seccion_descripcion__imagen" src="./assets/images/profile/trabajo2.jpg"
+              alt="foto trabajando en la oficina" title="trabajando en la oficina" />
+          </div>
+          <div class="seccion_descripcion__info scroll scroll_fino scroll_gris" aria-label="descripcion personal">
+            <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+              Mi historia
+            </h3>
+            <p class="seccion_descripcion__parrafo" aria-label="Detalles de mi historia"
+              aria-describedby="mi_historia_titulo">
+              Me llama mucho la atencion la programacion. Varias veces me habian hablado sobre el tema pero no me habia
+              puesto a investigar realmente de que se trataba; hasta que el año pasado, simplemente por probar, me
+              descargue una app donde enseñaban a programar con Python. Y a medida que iba avanzando, cada vez me
+              gustaba mas.
+              <br>
+              Me di cuenta que la programacion es un mundo muy amplio donde uno no para de de aprender.<br>
+            </p>
+            <p class="seccion_descripcion__parrafo" aria-label="Detalles de mi historia"
+              aria-describedby="mi_historia_titulo">
+              Me gusta trabajar en equipo y colaborar con otros desarrolladores para crear soluciones innovadoras. Mi
+              objetivo es seguir creciendo como desarrollador y contribuir a proyectos emocionantes que tengan un
+              impacto positivo en la vida de las personas.
+            </p>
+          </div>
+        </section>
+        <section class="seccion_descripcion">
+          <div class="seccion_descripcion__info scroll scroll_fino scroll_gris" aria-label="descripcion personal">
+            <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+              Mis hobbies
+            </h3>
+            <p class="seccion_descripcion__parrafo" aria-label="Detalles de mis hobbies"
+              aria-describedby="mis_hobbies_titulo">
+              En mi tiempo libre, disfruto de la lectura, especialmente libros sobre desarrollo personal. Siempre estoy
+              buscando oportunidades para aprender y mejorar mis habilidades.<br>
+              También disfruto de la música. Me gusta salir a caminar y disfrutar de la naturaleza.
+              Pero mas que nada, me encantan los animales, disfruto mucho de su compañia y jugar con ellos.
+            </p>
+            <p class="seccion_descripcion__parrafo" aria-label="Detalles de mis hobbies"
+              aria-describedby="mis_hobbies_titulo">
+              Tambien, entre otras cosas, me gusta la cocina y disfruto de preparar platos nuevos y experimentar con
+              diferentes ingredientes. Aprender sobre nutrición y salud, y trato de llevar un estilo de vida
+              equilibrado.<br>
+              Me gusta la jardinería y disfruto de cuidar mis plantas, tengo suculentas, cactus y carnivoras.
+            </p>
+          </div>
+          <div class="seccion_descripcion__porta_retrato">
+            <img class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+              src="./assets/images/profile/trabajo3.jpg" alt="foto de mi luegar de trabajo"
+              title="lugar de trabajo"/>
+          </div>
+        </section>
+      </div>
+    </article>
+    <article class="articulo proyectos" id="proyectos">
+      <h2 class="articulo__titulo">Mis proyectos</h2>
+      <div class="contenedor_tarjetas_grid">
+        <article class="tarjeta" aria-label="presentacion de proyecto personal">
+          <img class="tarjeta__imagen" src="./assets/images/proyectos/proyecto1.jpg" alt="imagen del proyecto"
+            title="proyecto 1" />
+          <div class="tarjeta__contenido">
+            <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Etapa 1 - Informatorio</h3>
+            <span class="tarjeta__divisor"></span>
+            <p class="tarjeta__parrafo scroll scroll_fino" aria-label="descripcion de proyecto personal"
+              aria-describedby="titulo_proyecto_1">
+              Ejercicios de cada una de las semanas de la Etapa 1 del Informatorio utilizando HTML y CSS.
+            </p>
+            <a href="https://github.com/sofiprodanov/Informatorio-Etapa1" class="boton boton_oscuro" target="_blank">Ver proyecto</a>
+          </div>
+        </article>
+        <article class="tarjeta" aria-label="presentacion de proyecto personal">
+          <img class="tarjeta__imagen" src="./assets/images/proyectos/proyecto2.jpg" alt="imagen del proyecto"
+            title="proyecto 2" />
+          <div class="tarjeta__contenido">
+            <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Proyecto 2</h3>
+            <span class="tarjeta__divisor"></span>
+            <p class="tarjeta__parrafo scroll scroll_fino scroll_gris" aria-label="descripcion de proyecto personal"
+              aria-describedby="titulo_proyecto_2">
+              Proximamente...
+            </p>
+            <a href="#" class="boton" target="_blank">Ver proyecto</a>
+          </div>
+        </article>
+        
+      </div>
+    </article>
+  </main>
+  <footer class="pie_de_pagina" role="contentinfo">
+    <div class="pie_de_pagina__columna">
+      <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+      <ul class="enlaces enlaces_redes">
+        <li class="enlaces__item">
+          <a class="enlaces__enlace enlaces__enlace_footer" href="https://github.com/sofiprodanov" target="_blank"><img
+              class="enlaces__icono" src="./assets/images/logos/github-logo.png" alt="Logo de GitHub"
+              title="GitHub" /></a>
+        </li>
+        <li class="enlaces__item">
+          <a class="enlaces__enlace enlaces__enlace_footer" href="https://www.instagram.com/sofiprodanov/"
+            target="_blank">
+            <img class="enlaces__icono" src="./assets/images/logos/ig-logo.png" alt="Logo de instagram"
+              title="Instagram" />
+          </a>
+      </ul>
+    </div>
+    <div class="pie_de_pagina__columna">
+      <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+      <ul class="enlaces enlaces_vertical">
+        <li class="enlaces__item">
+          <a class="enlaces__enlace enlaces__enlace_footer" href="mailto:sofiabprodanov@mail.com" target="_blank">Mail:
+            sofiabprodanov@gmail.com</a>
+        </li>
+      </ul>
+    </div>
+    <div class="pie_de_pagina__columna" role="navigation">
+      <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+      <ul class="enlaces enlaces_vertical">
+        <li class="enlaces__item">
+          <a class="enlaces__enlace enlaces__enlace_footer" href="#presentacion">Inicio</a>
+        </li>
+        <li class="enlaces__item">
+          <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi">Sobre mi</a>
+        </li>
+        <li class="enlaces__item">
+          <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos">Proyectos</a>
+        </li>
+      </ul>
+    </div>
+    <div class="pie_de_pagina__copyright">
+      <p>©️Copyright 2024</p>
+    </div>
+  </footer>
+</body>
+</html>
